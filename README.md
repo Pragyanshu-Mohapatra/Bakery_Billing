@@ -1,3 +1,4 @@
+*/Bakery Billing*/
 #include<stdio.h>
 #include<conio.h>
 #include <stdlib.h>
@@ -93,4 +94,4 @@ printf("\n**********************************************************************
 printf("\n****************************************************************************\n");
 
 }
-
+*/Adding all the configuration*/
