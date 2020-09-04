@@ -1,0 +1,17 @@
+Plan's  for project
+-------------------
+1.First page login
+2.Menu
+3.Order
+4.Final Bill
+5.Receipt
+6.Feedback 
+
+
+Function creation
+-----------------
+1.Authentication
+2.Order receiving
+3.Order placing
+4.Billing
+5.Review 
