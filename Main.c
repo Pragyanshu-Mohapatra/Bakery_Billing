@@ -14,9 +14,26 @@ char x,z;
 	float cost1= 0.0; // pizza cost
 	float cost2= 0.0; //pasta cost
 	float tax; // tax amount
-	float total; // total of pasta 
-// Ordering of Pizza
+	float total;
+	char name,pas; // total of pasta 
 printf("\n********Welcome to Sab Bakery*******\n");
+printf("\n----------------------------------------\n");
+printf("We offer the best bakery service in the region\n");
+printf("\t\tPlease Login: ");
+printf("\nUser_Name:");
+scanf("%c",&name);
+printf("\nPass:");
+scanf("%c",&pas);
+getch();
+
+printf("\nYou have succesfully login!!!\n**************************\dn");
+
+getch();
+
+system("cls");
+
+// Inpecting of Menu_Item
+
 printf("Menu:");
 printf("\n\n1.Pizza\n");
 printf("2.Pasta\n");

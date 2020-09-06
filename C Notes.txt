@@ -1,0 +1,9 @@
+Funtion types
+-------------
+1. No arguement & No return values
+2.With Arguement &No return Values
+3.With arguement& with return values
+4.No arg &with return values
+
+
+
