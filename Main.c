@@ -6,17 +6,26 @@
 
 
 int homepage()
-{	char name,pas;
-printf("\n********Welcome to Sab Bakery*******\n");
+{
+system("color B0");
+char name,pas;
+printf("*******************************************\n");
+printf("\n********Welcome to Nirmala Bakery*******\n");
 printf("\n----------------------------------------\n");
-printf("We offer the best bakery service in the region\n");
-printf("\t\tPlease Login: ");
+printf("\n   We offer the best bakery service in the region\n");
+printf("***************************************\n");
+printf("Please Enter your Credentials :-");
+printf("\n----------------------------------------");
 printf("\nUser_Name:");
 scanf("%c",&name);
-printf("\nPass:");
+printf("\n--");
+printf("\nPassword:");
 scanf("%c",&pas);
-getch();
-printf("\nYou have succesfully login!!!\n**************************\n");
+printf("\n----------------------------------------\n");
+printf("\nYou have succesfully login!!!\n");
+printf("----------------------------------------");
+
+printf("\n*******************************************\n");
 getch();
 system("cls");
 return 0;
