@@ -3,19 +3,10 @@
 #include<conio.h>
 #include <stdlib.h>
 
-int main()
-{
-int amount,pizza,GarlicBNo,baklava;
 
-char x,z;
-//  Variables
-	int pasta; // pasta number
-	int softdr;// drink number
-	float cost1= 0.0; // pizza cost
-	float cost2= 0.0; //pasta cost
-	float tax; // tax amount
-	float total;
-	char name,pas; // total of pasta 
+
+int homepage()
+{	char name,pas;
 printf("\n********Welcome to Sab Bakery*******\n");
 printf("\n----------------------------------------\n");
 printf("We offer the best bakery service in the region\n");
@@ -25,21 +16,52 @@ scanf("%c",&name);
 printf("\nPass:");
 scanf("%c",&pas);
 getch();
-
-printf("\nYou have succesfully login!!!\n**************************\dn");
-
+printf("\nYou have succesfully login!!!\n**************************\n");
 getch();
-
 system("cls");
+return 0;
+}
 
+
+int menu()
+{
 // Inpecting of Menu_Item
-
-printf("Menu:");
+printf("*********************************\n");
+printf("\tMenu:");
+printf("\n*********************************\n");
 printf("\n\n1.Pizza\n");
+printf("--------------\n");
 printf("2.Pasta\n");
+printf("--------------\n");
+printf("3.Coffee\n");
+printf("--------------\n");
+printf("4.Tea\n");
+printf("--------------\n");
+printf("5.Biscuits\n");
+printf("--------------\n");
+printf("5.Burgers\n");
+printf("--------------\n");
+printf("6.Rolls\n");
+printf("--------------\n");	
+printf("\n*********************************\n");
+getch();
+system("cls");
+}
+
+int order()
+{int amount,pizza,GarlicBNo,baklava;
+
+char x,z;
+//  Variables
+	int pasta; // pasta number
+	int softdr;// drink number
+	float cost1= 0.0; // pizza cost
+	float cost2= 0.0; //pasta cost
+	float tax; // tax amount
+	float total;
+ // total of pasta 
 printf("\nDo you want to place Pizza Order?(Enter 'Y' for YES or 'N' for NO):\n");
 scanf("%c",&x);
-
 if(x=='Y'||'y')
 {
 printf("How many pizza To order?\n");
@@ -103,12 +125,48 @@ else
 {baklava=softdr/3;
 printf("Baklava:%d",baklava);}
 }
-//Total Amount Printing
-printf("\n****************************************************************************\n");
-printf("\n****************************************************************************\n");
-printf("\nThe total payment amounts received for the pizza order:%f\nthe total payment amounts received for pasta order:%f\nthe total amount of pizzas and pasta sold in that session:%d",cost1,cost2,pizza+pasta);
-printf("\n****************************************************************************\n");
-printf("\n****************************************************************************\n");
+	
+getch();
+system("cls");	
 
 }
+
+
+int total_bill()
+{
+
+	//Total Amount Printing
+printf("\n****************************************************************************\n");
+printf("\n****************************************************************************\n");
+//printf("\nThe total payment amounts received for the pizza order:%f\nthe total payment amounts received for pasta order:%f\nthe total amount of pizzas and pasta sold in that session:%d",cost1,cost2,pizza+pasta);
+printf("\nIndex                      Item Description                    Quantity  Rate+VA\n--------------------------------------------------------------------------\n");
+printf("\n1.                           Pizza                                   1      25     \n");
+printf("--\n");
+printf("2.                           Pasta                                   1      25     \n");
+printf("--\n");
+printf("3.                           Coffee                                  1      25     \n");
+printf("--\n");
+printf("4.                           Tea                                     1      25     \n");
+printf("--\n");
+printf("5.                           Burger                                  1      25     \n");
+printf("--\n");
+printf("6.                           Roll                                    1      25     \n\n");
+
+printf("\n****************************************************************************\n");
+printf("\n****************************************************************************\n");
+getch();
+system("cls");
+}
+
+
+
+int main()
+{ 
+homepage();
+menu();
+order();
+total_bill();
 //Adding all the configuration
+
+}
+
